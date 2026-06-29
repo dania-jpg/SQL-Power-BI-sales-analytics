@@ -23,7 +23,7 @@ The query provides the following insights for each customer:
 ===============================================================================
 */
 -- create view table 
-create view gold.analytics_customer AS
+create or alter view gold.analytics_customer AS
 -- Create a CTE that aggregates all sales information for each customer
 WITH base_customer_info AS
 (
